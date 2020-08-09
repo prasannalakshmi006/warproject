@@ -18,7 +18,12 @@ pipeline{
    
                }
         }  
-       } 
+      stage(deploywarfile){
+           steps{
+              sh '/opt/deploy.sh'
+              }
+          }
+     } 
         
     }
 
